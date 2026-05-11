@@ -13,8 +13,8 @@ st.set_page_config(
 st.title("🤖 Çalışan İstifa Tahmin Dashboard")
 st.write("Bu sistem, çalışan bilgilerine göre istifa riskini tahmin eder.")
 
-df = pd.read_csv("WA_Fn-UseC_-HR-Employee-Attrition.csv")
-model = joblib.load("employee_attrition_model.pkl")
+df = pd.read_csv("MII26-Employee-Attrition-Analysis-main/catboost_info/WA_Fn-UseC_-HR-Employee-Attrition.csv")
+model = joblib.load("MII26-Employee-Attrition-Analysis-main/catboost_info/employee_attrition_model.pkl")
 
 st.subheader("📌 Veri Seti Önizleme")
 st.dataframe(df.head(), use_container_width=True)
